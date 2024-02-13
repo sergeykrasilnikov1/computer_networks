@@ -1,0 +1,130 @@
+{% extends 'app/base.html' %}
+{% load static %}
+{% block title %}
+<div class="logo-wrapper">
+                <img src="{% static 'frontend/images/logo_design_main_white@4x 1.svg' %}" alt="logo" class="logo">
+              </div>
+{% endblock %}
+
+{% block index1 %}
+#company
+{% endblock %}
+
+{% block index2 %}
+#catalog
+{% endblock %}
+{% block main_title %} <title>Fineform</title>{% endblock %}
+
+
+{% block content %}
+        <a class="btn fixed-btn btn-primary" href="{% url 'app:order' %}">Заказать дизайн</a>
+    <section id="company" class="container-fluid info">
+        <div class="container">
+            <div class="info-text">
+                <p class="info-text-descriotion"> <a href="#" class="link">FineForm</a>  — студия дизайна, которая специализируется 
+                    на брендинге и веб-разработке.        
+                </p>
+                <p class="info-text-descriotion">С 2021 года поддерживаем сильные бренды и помогаем 
+                    в развитии молодым компаниям. В основе наших работ стоит чётная структура работы и сильная команда.
+                </p>
+            </div>
+            <div class="info-round-wrapper">
+                <div class="info-round">
+                <span class="info-round-text">свыше</span>
+                <div class="round"><span class="info-round-value">50</span></div>
+                <span class="info-round-text">довольных <br>заказчиков</span>
+            </div>
+            <div class="info-round">
+                <span class="info-round-text">на рынке с</span>
+                <div class="round"><span class="info-round-value">2021</span></div>
+                <span class="info-round-text">года</span>
+            </div>
+            <div class="info-round">
+                <span class="info-round-text">более</span>
+                <div class="round"><span class="info-round-value">10</span></div>
+                <span class="info-round-text">крупных 
+                    кейсов</span>
+            </div>
+        </div>
+        </div>
+        
+    </section>
+    <section id="catalog" class="catalog">
+        <div class="images text-center">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 " >
+                    <div class="cont">
+                        <img class="big-img img-hidden" src="{% static 'frontend/images/example1.png' %}" alt="Пример">
+                        <div class="img-animation">
+                          <span class="animation-title">Профюруслуги</span>
+                          <span class="animation-text">Оформление социальных сетей </span>
+                        </div>
+                    </div>
+                    <div class="cont">
+                        <img class="img-hidden" src="{% static 'frontend/images/example7.png' %}" alt="Пример">
+                        <div class="img-animation">
+                          <span class="animation-title">Вилла анна</span>
+                          <span class="animation-text">Брендирование продукции </span>
+                        </div>
+                    </div>
+                    <div class="cont">
+                        <img src="{% static 'frontend/images/example4.png' %}" alt="Пример">
+                        <div class="img-animation">
+                          <span class="animation-title">Сбермаркет</span>
+                          <span class="animation-text">Серия широкоформатная реклама </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 ">
+                    <div class="cont">
+                        <img class="img-hidden" src="{% static 'frontend/images/example5.png' %}" alt="Пример">
+                        <div class="img-animation">
+                          <span class="animation-title">Tekta Group</span>
+                          <span class="animation-text">Серия широкоформатной рекламы </span>
+                        </div>
+                    </div>
+                    <div class="cont">
+                        <img class="big-img" src="{% static 'frontend/images/example2.png' %}" alt="Пример">
+                        <div class="img-animation">
+                          <span class="animation-title">Servity</span>
+                          <span class="animation-text">Брендирование продукции </span>
+                        </div>
+                    </div>
+                    <div class="cont">
+                        <img class="img-hidden" src="{% static 'frontend/images/example8.png' %}" alt="Пример">
+                        <div class="img-animation">
+                          <span class="animation-title">Man`s store</span>
+                          <span class="animation-text">Логотип и оформление </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="cont">
+                        <img src="{% static 'frontend/images/example3.png' %}" alt="Пример">
+                        <div class="img-animation">
+                          <span class="animation-title">Ayata</span>
+                          <span class="animation-text">Брендирование продукции </span>
+                        </div>
+                    </div>
+                    <div class="cont">
+                        <img src="{% static 'frontend/images/example6.png' %}" alt="Пример">
+                        <div class="img-animation">
+                          <span class="animation-title">Ryanair</span>
+                          <span class="animation-text">Сайт под ключ </span>
+                        </div>
+                    </div>
+                    <div class="cont">
+                        <img class="big-img" src="{% static 'frontend/images/example9.png' %}" alt="Пример">
+                        <div class="img-animation">
+                          <span class="animation-title">atletium</span>
+                          <span class="animation-text">Брендирование продукции </span>
+                        </div>
+                    </div>
+                </div>
+
+              </div>
+          </div>
+          <a class="btn btn-primary catalog-link"  href="{% url 'app:catalog' %}" role="button">Другие работы</a>
+    </section>
+{% endblock %}
+
